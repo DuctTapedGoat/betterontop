@@ -1,4 +1,7 @@
-# 🛡️ BetterOnTop Project (v1.1)
+# 🛡️ BetterOnTop Project (v1.1) 
+
+https://github.com/DuctTapedGoat/betterontop/releases/download/Utility/BetterOnTop-v1.1-InstallerOnline.exe
+https://github.com/DuctTapedGoat/betterontop/releases/download/Utility/BetterOnTop-v1.1-PortableMini.exe
 
 BetterOnTop is a powerful, lightweight Windows utility built for power users to manage window states with system-wide hotkeys and persistent memory.
 
