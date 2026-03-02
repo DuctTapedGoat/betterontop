@@ -20,16 +20,14 @@ We offer different builds depending on your needs:
 
 | Build | Size | Best For... |
 | :--- | :--- | :--- |
-| **[Standalone (Mono)](https://github.com/USER/BetterOnTop/releases)** | ~65 MB | People who want a single `.exe` that "just works" on any 64-bit Windows PC without installing anything. |
-| **[Portable Mini](https://github.com/USER/BetterOnTop/releases)** | **163 KB** | Power users who already have [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) installed and want the absolute smallest footprint. |
-| **[Installer (Offline)](https://github.com/USER/BetterOnTop/releases)** | ~9 MB | A full setup experience that installs the app, adds it to your **Startup List**, and registers for easy **Uninstall** from Windows Settings. |
-| **[Installer (Online)](https://github.com/USER/BetterOnTop/releases)** | ~300 KB | Same as the Offline Installer, but transparently uses `winget` to ensure the .NET 8 Runtime is installed for you. |
+| **[Portable Mini] | Power users who already have [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) installed and want the absolute smallest footprint. |
+| **[Installer (Online)] | Same as the Offline Installer, but transparently uses `winget` to ensure the .NET 8 Runtime is installed for you. |
 
 ---
 
 ## 🛠️ Installation & Setup
 
-1. Download your preferred version from the **[Releases](https://github.com/USER/BetterOnTop/releases)** page.
+1. Download your preferred version from the **[Releases](https://github.com/DuctTapedGoat/BetterOnTop/)** page.
 2. Run the application.
 3. Look for the **Shield Icon** in your system tray (near the clock).
 4. Right-click the icon to:
@@ -50,7 +48,8 @@ If you used the **Installer** version:
 
 If you used the **Portable** version:
 
-* Just delete the `.exe`. (Note: you may need to manually remove it from your Startup folder if you put it there).
+* Just delete the `.exe`
+* Note: you may need to manually remove it from your Startup folder if you put it there, to get there quickly press WIN+R then type shell:startup
 
 ---
 
