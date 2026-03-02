@@ -1,3 +1,94 @@
+# 🛡️ BetterOnTop (v1.2.2)
+
+BetterOnTop is a powerful, lightweight Windows utility built for power users to manage window states with system-wide hotkeys, persistent memory, and a specialized Glass HUD.
+
+---
+
+## ⚡ System Hotkeys (Ctrl + Alt + Key)
+
+| Hotkey | Feature | Description |
+|:---:|:---|:---|
+| **`T`** | **Topmost** | Pins the active window to stay always on top. |
+| **`W`** | **Opacity** | Toggles 70% transparency for better visibility behind windows. |
+| **`U`** | **Ghost** | Enables **Click-through** mode (interact with windows behind). |
+| **`L`** | **Lock Pos** | **Persistent Memory**: Automatically restores window X/Y on launch. |
+| **`M`** | **Mouse Lock** | **New**: Traps the mouse inside the window with an 8px internal safety barrier. |
+| **`/`** | **Glass HUD** | Toggles a "Glass" overlay showing live input and window telemetry. |
+| **`Bksp`** | **Clear Log** | Instantly wipes the live Glass HUD log history. |
+| **`\`** | **Save Log** | Exports all current session logs to a dated `.txt` file. |
+
+---
+
+## 💎 The Glass HUD (`/`)
+
+The Glass HUD provides a non-obtrusive, high-performance telemetry display:
+
+- **Rich Metrics**: See PIDs, Window Handles, Extended Styles, and state flags (`T`, `W`, `U`, `L`, `M`) in real-time.
+- **Visual Style**: Fully transparent background with 50% opacity Cyan/Black high-contrast text.
+- **Safe Positioning**: Automatically applies a 2px shave in fullscreen to ensure it stays "inside" borderless apps.
+- **Hardened**: Includes anti-recursion logic to prevent hooking into itself (Explorer stability fix).
+
+---
+
+## 🖱️ Mouse Lock & Clipping (`M`)
+
+The **Mouse Lock** feature is designed for borderless gaming and multi-monitor productivity:
+
+1. **Dynamic Capture**: Locks the cursor instantly to the application frame.
+2. **8px Safety Barrier**: The cursor is trapped 8 pixels inside the edge to prevent "leakage" into other screens or the taskbar.
+3. **Smart Focus**: Automatically releases the clip when you Alt+Tab to another app, and re-snags it the millisecond you return.
+
+---
+
+## 🛠️ Control Center (System Tray)
+
+Right-click the **Shield Icon** in your tray for total control:
+
+- **Visual Flags**: Quick-view active states: `[T W U L M]`.
+- **Run at Startup**: One-click Registry toggle to keep BetterOnTop active across reboots.
+- **Global Reset**: Instantly strip all effects (topmost, transparency, ghost) from any tracked window.
+- **Memory Management**: View and wipe specific application position profiles.
+
+---
+
+## 📦 Distribution Formats
+
+### 1. [Standalone Installer (Offline)](file:///BetterOnTop-v1.2.2-Installer.exe)
+
+* **Full Suite**: Includes everything needed in a single installer.
+- **Self-Contained**: No external downloads required.
+- **Auto-Cleanup**: Registers a clean uninstaller in Windows Settings.
+
+### 2. [Live Setup (Online)](file:///BetterOnTop-v1.2.2-OnlineInstaller.exe)
+
+* **Ultralight**: ~400KB bootstrap.
+- **Self-Healing**: Automatically verifies and installs .NET 8 via `winget` if missing.
+
+### 3. [Portable Standalone](file:///BetterOnTop-v1.2.2-Standalone.exe)
+
+* **Single File**: ~67MB, includes the entire .NET runtime. Just run it.
+
+### 4. [Portable Mini](file:///BetterOnTop-v1.2.2-Mini.exe)
+
+* **Tiny**: ~215KB executable. Requires .NET 8 Runtime pre-installed.
+
+---
+
+## 🏗️ Project Organization
+
+- `BetterOnTop-v1.2.2-Source/`: Core Application Source (C# / .NET 8).
+- `BetterOnTop-v1.2.2-Installer/`: Installer project source (Offline).
+- `BetterOnTop-v1.2.2-OnlineInstaller-Source/`: Bootstrap source (Online).
+- `BetterOnTop-v1.2.2-Mini-Source/`: Lightweight build source.
+
+---
+
+Built by **Antigravity** ❤️ For power users who demand perfect window control.
+
+
+
+
+
 # 🛡️ BetterOnTop Project (v1.1) 
 
 https://github.com/DuctTapedGoat/betterontop/releases/download/Utility/BetterOnTop-v1.1-InstallerOnline.exe
